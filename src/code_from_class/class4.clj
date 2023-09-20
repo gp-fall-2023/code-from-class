@@ -1,5 +1,11 @@
 (ns code-from-class.class4)
 
+(defn square
+  "Squares the input x; this is a docstring"
+  [x] ;; this is the list of parameters
+  (* x x)) ;; functions return the last (or only) thing they evaluate
+
+
 (comment
 
   ; Sequences: lists and vectors
@@ -192,6 +198,4 @@
   ;; => 125
 
   ;; fn defines an anonymous function that doesn't have a binding
-
-
   )
