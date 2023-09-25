@@ -1,11 +1,11 @@
 (ns code-from-class.class11)
 
-(comment
+(def infinite-foobar
+  (iterate (fn [s]
+             (str s "bar"))
+           "foo"))
 
-  (def infinite-foobar
-    (iterate (fn [s]
-               (str s "bar"))
-             "foo"))
+(comment
 
   (take 5 infinite-foobar)
   ;; => ("foo" "foobar" "foobarbar" "foobarbarbar" "foobarbarbarbar")
@@ -100,9 +100,4 @@
 
   (read-string "\"this is a string\"")
   ;; => "this is a string"
-
-  
-
-
-
   )
